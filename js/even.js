@@ -65,9 +65,31 @@ console.log(x)
 
 //  seven task  function that filterout negative numbers
 
-x = [1, 2, 3, -34, 21, 43, 54, -32,]
-x.filter((x) => x => 0);
-console.log(x)
+let negativenumber = [1, 2, 3, -34, 21, 43, 54, -32];
+let remonega = negativenumber.filter((ele) => ele > 0);
+console.log(remonega);
+
+// remove white space
+let whitespace = "     om";
+let removewhite = whitespace.trim();
+console.log(removewhite);
+
+// number are divisble by 10
+let divisiblevalue = document.getElementById("inputofdivide");
+const checktrue = () => {
+    if (divisiblevalue.value % 10 == 0) {
+        document.getElementById("inputofboolean").innerHTML = true;
+    } else {
+        document.getElementById("inputofboolean").innerHTML = false;
+    }
+}
+
+// check numbers of vowels in string
+
+let vowels = "Omsolanki";
+let y = vowels.match(/[aeiou]/gi).length;
+console.log(y)
+
 
 
 
